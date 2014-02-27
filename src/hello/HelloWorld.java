@@ -6,6 +6,10 @@ package hello;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        String who = "World";
+        if (args.length > 0) {
+          who = args[0];
+        }
+        System.out.printf("Hello, %s!\n", who);
     }
 }
